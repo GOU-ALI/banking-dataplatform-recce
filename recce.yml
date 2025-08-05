@@ -1,0 +1,13 @@
+# Recce checks - simple version
+checks:
+  - name: Row Count Check
+    description: Compare row counts between environments
+    type: row_count_diff
+    params:
+      select: "*"
+      
+  - name: Schema Check
+    description: Check for schema changes
+    type: schema_diff
+    params:
+      select: "*"

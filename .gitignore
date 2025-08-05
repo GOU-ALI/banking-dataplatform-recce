@@ -1,0 +1,38 @@
+# dbt
+target/
+target-base/
+dbt_packages/
+logs/
+*.log
+
+# Recce
+recce_state.json
+.recce/
+
+# Python
+venv/
+*.py[cod]
+__pycache__/
+.Python
+*.so
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials - TRÈS IMPORTANT !
+profiles.yml
+.env
+*.pem
+*.key
+
+# Documentation générée
+site/

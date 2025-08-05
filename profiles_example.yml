@@ -1,0 +1,23 @@
+# Exemple de configuration - Copier vers profiles.yml et ajouter vos credentials
+banking_dataplatform:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: [YOUR_USERNAME]
+      password: [YOUR_PASSWORD]  # NE JAMAIS COMMITER LE MOT DE PASSE
+      dbname: dbt_test_recce
+      schema: banking_dev
+      threads: 1
+      port: 5432
+
+    prod:
+      type: postgres
+      host: localhost
+      user: [YOUR_USERNAME]
+      password: [YOUR_PASSWORD]  # NE JAMAIS COMMITER LE MOT DE PASSE
+      dbname: dbt_test_recce
+      schema: banking_prod
+      threads: 1
+      port: 5432
